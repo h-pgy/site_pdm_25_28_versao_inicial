@@ -1,0 +1,209 @@
+.programas-anteriores {
+    padding: 80px 20px;
+    text-align: center;
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .titulo {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 3.2rem;
+        color: rgb(var(--color-primary));
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        text-align: justify;
+        margin-bottom: 20px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 🔹 Mantém o grid 2x2 */
+        gap: 20px;
+        justify-content: center; /* 🔹 Centraliza os cards horizontalmente */
+        align-items: center; /* 🔹 Garante alinhamento vertical */
+        margin: 0 auto;
+        max-width: 800px; /* 🔹 Define um limite para centralização */
+        
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr; /* 🔹 Em telas pequenas, exibe um card por linha */
+            max-width: 100%;
+        }
+    }
+
+    .card {
+        background: white;
+        padding: 0;
+        border-radius: 12px;
+        width: 320px;
+        overflow: hidden;
+        text-align: left;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            color: rgb(var(--color-primary));
+            margin-bottom: 5px;
+        }
+
+        .prefeito {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: rgb(var(--color-secondary));
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: rgb(var(--color-text));
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .btn-detalhes {
+            background: rgb(var(--color-primary));
+            color: rgb(var(--color-inverted));
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            font-family: 'Bebas Neue', sans-serif;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+            text-align: center;
+
+            &:hover {
+                background: rgba(var(--color-primary), 0.9);
+            }
+        }
+    }
+}
+
+/* 🔹 Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: rgb(var(--color-primary));
+    margin-bottom: 15px;
+}
+
+.modal .prefeito {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(var(--color-secondary));
+    margin-bottom: 10px;
+}
+
+.modal-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    color: rgb(var(--color-text));
+    margin-bottom: 20px;
+}
+
+.modal h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(var(--color-primary));
+    margin-top: 15px;
+}
+
+.modal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal ul li {
+    margin: 10px 0;
+}
+
+/* 🔹 Botões de download */
+.downloads {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 15px;
+    background: rgb(var(--color-primary));
+    color: rgb(var(--color-inverted));
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background: rgba(var(--color-primary), 0.9);
+    }
+}
+
+/* 🔹 Ícone de fechar modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(var(--color-primary));
+}
