@@ -1,0 +1,41 @@
+.footer {
+    background: rgb(var(--color-primary)); /* 🔹 Cor principal do projeto */
+    color: rgb(var(--color-inverted));
+    padding: 40px 20px;
+    text-align: center;
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .logo-prefeitura {
+        width: 120px; /* 🔹 Tamanho do logo da prefeitura */
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .github-link {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(var(--color-secondary));
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        .logo-github {
+            width: 24px; /* 🔹 Ajusta o tamanho do logo do GitHub */
+            height: auto;
+        }
+
+        &:hover {
+            color: rgba(var(--color-secondary), 0.8);
+        }
+    }
+}
