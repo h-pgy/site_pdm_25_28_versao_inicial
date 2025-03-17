@@ -1,0 +1,12 @@
+---
+---
+
+:root {
+    --color-primary: {{ site.colors.primary }};
+    --color-secondary: {{ site.colors.secondary }};
+    --color-inverted: {{ site.colors.inverted }};
+    --color-text: {{ site.colors.text }};
+  }
+  
+
+@import "app";

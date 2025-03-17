@@ -1,0 +1,20 @@
+# Configuração básica do Jekyll
+title: "Programa de Metas 2025-2028"
+description: "Site oficial do Programa de Metas 2025-2028 da Prefeitura de São Paulo"
+
+# Definição do caminho base do site
+url: "http://localhost:4000" # Altere para o domínio final em produção
+baseurl: ""
+# Definição das cores (usadas no CSS)
+colors:
+  primary: "37, 35, 89"     # RGB da cor principal (#252359)
+  secondary: "23, 140, 166" # RGB da cor secundária (#178CA6)
+  inverted: "78, 203, 217"  # RGB da cor invertida (#4ECBD9)
+  text: "13, 13, 13"        # RGB da cor do texto (#0D0D0D)
+
+# Configuração do Sass (Garante que o Jekyll compila corretamente)
+sass:
+  sass_dir: _sass
+  style: compressed  # Comprime o CSS para melhorar a performance
+
+
