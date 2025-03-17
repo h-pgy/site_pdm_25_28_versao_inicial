@@ -1,6 +1,20 @@
-body, html {
+:root {
+    --color-primary: 37, 35, 89;     /* Azul escuro (navbar, máscaras) */
+    --color-secondary: 23, 140, 166; /* Azul claro (botões) */
+    --color-inverted: 78, 203, 217;  /* Ciano (texto nos botões) */
+    --color-text: 13, 13, 13;        /* Preto (texto padrão) */
+}
+
+/* 🔹 Reset para evitar estilos inesperados */
+* {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    overflow-x: hidden; // 🔹 Garante que não haja scroll horizontal indesejado
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(var(--color-text));  /* 🔹 Garante que o texto fique visível */
+    background: white;              /* 🔹 Evita fundo transparente */
+    padding-top: 70px;              /* 🔹 Ajusta espaço para navbar fixa */
 }

@@ -1,30 +1,29 @@
 .navbar {
     position: fixed;
-    top: 0; // 🔹 Agora gruda no topo sem espaçamento
+    top: 0;
     left: 0;
-    width: 100%; // 🔹 Ocupa toda a largura da página
-    background: rgba(var(--color-primary), 0.9);
+    width: 100%;
+    background: rgba(var(--color-primary), 0.95); // 🔹 Navbar sempre visível
     backdrop-filter: blur(8px);
     padding: 15px 30px;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    transition: all 0.3s ease-in-out;
-    border-radius: 0; // 🔹 Remove o arredondamento para ocupar 100% da largura
+    justify-content: space-between;
+    transition: background 0.3s ease-in-out;
 
     .container {
         display: flex;
         align-items: center;
         width: 100%;
         max-width: 1200px;
-        margin: 0 auto; // 🔹 Centraliza o conteúdo dentro da navbar
+        margin: 0 auto;
     }
 
     .navbar-logo {
         display: flex;
         align-items: center;
-        margin-right: 40px;
+        margin-right: 40px; // 🔹 Espaço entre o logo e os botões
 
         img {
             width: 60px;
@@ -41,37 +40,31 @@
     .nav-links {
         list-style: none;
         display: flex;
-        gap: 25px;
-
-        li {
-            display: inline;
-        }
-
+        gap: 30px; /* 🔹 Aumenta o espaçamento entre os botões */
+        align-items: center;
+        
         .nav-btn {
             display: inline-block;
-            padding: 10px 18px;
-            background: var(--color-secondary);
-            border-radius: 8px;
-            color: var(--color-inverted) !important;
+            padding: 16px 30px;  /* 🔹 Aumenta o espaço interno do botão */
+            background: rgba(var(--color-primary), 0.85);
+            border-radius: 12px;  /* 🔹 Bordas mais arredondadas para um efeito mais moderno */
+            color: rgb(var(--color-inverted)) !important;
             font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.2rem;
+            font-size: 1.6rem;  /* 🔹 Texto maior */
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             text-decoration: none;
             transition: all 0.3s ease-in-out;
-            backdrop-filter: blur(5px);
-
+            width: 100%;  /* 🔹 Faz os botões ocuparem a largura total do contêiner */
+            text-align: center; /* 🔹 Garante que o texto fique centralizado */
+    
             &:hover {
-                background: rgba(var(--color-secondary), 0.8);
-                transform: translateY(-2px);
-                box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+                background: rgba(var(--color-primary), 1);
+                transform: translateY(-3px);
+                box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
             }
         }
     }
-
-    // 🔹 Navbar reduz um pouco ao rolar a página
-    &.scrolled {
-        background: rgba(var(--color-primary), 0.95);
-        padding: 10px 25px;
-    }
+    
+    
 }
