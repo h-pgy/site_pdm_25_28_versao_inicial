@@ -3,32 +3,35 @@
     text-align: center;
 
     .container {
-        max-width: 800px;
+        max-width: 1000px; /* 🔹 Aumenta a largura máxima */
         margin: 0 auto;
     }
 
     .titulo {
         font-family: 'Bebas Neue', sans-serif;
-        font-size: 2.8rem;
+        font-size: 3.2rem; /* 🔹 Aumenta o tamanho do título */
         color: rgb(var(--color-primary));
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         text-transform: uppercase;
     }
 
     p {
-        font-size: 1.1rem;
-        line-height: 1.6;
+        font-size: 1.4rem; /* 🔹 Aumenta o tamanho do texto */
+        line-height: 1.8;
         text-align: justify;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
+        max-width: 90%; /* 🔹 Permite que ocupe mais espaço na página */
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .destaque {
         font-family: 'Bebas Neue', sans-serif;
-        font-size: 1.8rem;
+        font-size: 2rem; /* 🔹 Aumenta o tamanho da primeira letra */
         font-weight: bold;
         color: rgb(var(--color-primary));
         display: inline-block;
-        margin-right: 5px;
+        margin-right: 6px;
     }
 
     .download-container {
@@ -56,6 +59,7 @@
         background: rgba(var(--color-primary), 0.05);
         width: 100%;
         border-radius: 8px;
+        text-align: center;
     }
     
     .download-button {

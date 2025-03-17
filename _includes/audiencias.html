@@ -1,0 +1,32 @@
+<section id="audiencias" class="audiencias">
+    <div class="container">
+        <h2 class="titulo">Audiências Públicas</h2>
+
+        <p><span class="destaque">A</span> participação popular é essencial para a construção de um planejamento municipal democrático e eficiente. As audiências públicas garantem que a sociedade civil tenha voz ativa na definição das prioridades e diretrizes do Programa de Metas.</p>
+
+        <p><span class="destaque">O</span> envolvimento direto da população fortalece a transparência e possibilita ajustes no planejamento com base em contribuições reais dos cidadãos. Participe das audiências públicas e ajude a construir uma cidade mais alinhada às necessidades de todos.</p>
+
+        <div class="tabela-container">
+            <table class="tabela-audiencias">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Local</th>
+                        <th>Streaming</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for audiencia in site.data.audiencias %}
+                    <tr>
+                        <td>{{ audiencia.data }}</td>
+                        <td>{{ audiencia.hora }}</td>
+                        <td>{{ audiencia.local }}</td>
+                        <td><a href="{{ audiencia.streaming }}" target="_blank">Acompanhe</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

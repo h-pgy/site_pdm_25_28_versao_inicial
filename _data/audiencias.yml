@@ -1,0 +1,140 @@
+# 🔹 Audiências Regionais - 32 Subprefeituras
+- data: "01/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Sé - Rua Álvares Penteado, 49"
+  streaming: "https://www.youtube.com/live_audiencia_se"
+
+- data: "02/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Lapa - Rua Guaicurus, 1000"
+  streaming: "https://www.youtube.com/live_audiencia_lapa"
+
+- data: "03/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Pinheiros - Rua Butantã, 200"
+  streaming: "https://www.youtube.com/live_audiencia_pinheiros"
+
+- data: "04/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Vila Mariana - Rua José Maria Whitaker, 170"
+  streaming: "https://www.youtube.com/live_audiencia_vilamariana"
+
+- data: "05/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Santo Amaro - Av. João Dias, 1200"
+  streaming: "https://www.youtube.com/live_audiencia_santoamaro"
+
+- data: "06/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Butantã - Rua Ulpiano da Costa Manso, 201"
+  streaming: "https://www.youtube.com/live_audiencia_butanta"
+
+- data: "07/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Freguesia/Brasilândia - Av. João Marcelino Branco, 95"
+  streaming: "https://www.youtube.com/live_audiencia_freguesia"
+
+- data: "08/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Jaçanã/Tremembé - Av. Luis Stamatis, 300"
+  streaming: "https://www.youtube.com/live_audiencia_jacana"
+
+- data: "09/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Perus - Rua Ylídio Figueiredo, 349"
+  streaming: "https://www.youtube.com/live_audiencia_perus"
+
+- data: "10/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Pirituba/Jaraguá - Av. Miguel de Castro, 560"
+  streaming: "https://www.youtube.com/live_audiencia_pirituba"
+
+- data: "11/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura São Mateus - Av. Ragueb Chohfi, 1400"
+  streaming: "https://www.youtube.com/live_audiencia_saomateus"
+
+- data: "12/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Itaquera - Rua Gregório Ramalho, 100"
+  streaming: "https://www.youtube.com/live_audiencia_itaquera"
+
+- data: "13/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Guaianases - Rua Hipólito de Camargo, 320"
+  streaming: "https://www.youtube.com/live_audiencia_guaianases"
+
+- data: "14/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura São Miguel - Rua Dona Ana Flora Pinheiro de Souza, 76"
+  streaming: "https://www.youtube.com/live_audiencia_saomiguel"
+
+- data: "15/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Cidade Tiradentes - Rua Sara Kubitschek, 200"
+  streaming: "https://www.youtube.com/live_audiencia_cidadetiradentes"
+
+- data: "16/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Sapopemba - Av. Sapopemba, 9876"
+  streaming: "https://www.youtube.com/live_audiencia_sapopemba"
+
+- data: "17/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Vila Prudente - Av. Oratório, 2000"
+  streaming: "https://www.youtube.com/live_audiencia_vilaprudente"
+
+- data: "18/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Mooca - Rua Taquari, 546"
+  streaming: "https://www.youtube.com/live_audiencia_mooca"
+
+- data: "19/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Aricanduva - Av. Aricanduva, 5550"
+  streaming: "https://www.youtube.com/live_audiencia_aricanduva"
+
+- data: "20/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Campo Limpo - Estr. de Itapecerica, 8888"
+  streaming: "https://www.youtube.com/live_audiencia_campolimpo"
+
+- data: "21/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Capela do Socorro - Av. Sen. Teotônio Vilela, 2000"
+  streaming: "https://www.youtube.com/live_audiencia_capela"
+
+- data: "22/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura M'Boi Mirim - Estr. do M'Boi Mirim, 5200"
+  streaming: "https://www.youtube.com/live_audiencia_mboimirim"
+
+- data: "23/04/2025"
+  hora: "19h00"
+  local: "Subprefeitura Ipiranga - Rua Lino Coutinho, 444"
+  streaming: "https://www.youtube.com/live_audiencia_ipiranga"
+
+# 🔹 Audiências Temáticas
+- data: "24/04/2025"
+  hora: "18h00"
+  local: "Auditório da Prefeitura - Av. Paulista, 900"
+  streaming: "https://www.youtube.com/live_meioambiente"
+  tema: "Meio Ambiente"
+
+- data: "25/04/2025"
+  hora: "18h00"
+  local: "Auditório da Prefeitura - Av. Paulista, 900"
+  streaming: "https://www.youtube.com/live_transportes"
+  tema: "Transportes"
+
+- data: "26/04/2025"
+  hora: "18h00"
+  local: "Auditório da Prefeitura - Av. Paulista, 900"
+  streaming: "https://www.youtube.com/live_educacao"
+  tema: "Educação"
+
+- data: "27/04/2025"
+  hora: "18h00"
+  local: "Auditório da Prefeitura - Av. Paulista, 900"
+  streaming: "https://www.youtube.com/live_saude"
+  tema: "Saúde"
