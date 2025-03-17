@@ -8,5 +8,5 @@
     --color-text: {{ site.colors.text }};
   }
   
-
+@import "global";  // 🔹 o `_global.scss` será carregado primeiro
 @import "app";

@@ -1,33 +1,35 @@
 .banner {
     position: relative;
+    width: 100vw; // 🔹 Garante que ocupa toda a largura
     height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    margin: 0; // 🔹 Remove qualquer margem extra
 
-    // Imagem de fundo com efeito de blur reduzido
+    // 🔹 Imagem de fundo corrigida para cobrir toda a tela
     &::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         background: url('/assets/images/banner-bg.jpg') no-repeat center center;
         background-size: cover;
-        filter: blur(3px); // 🔹 Reduzi o blur de 6px para 3px
-        transform: scale(1.05); // Pequeno ajuste para evitar bordas visíveis
+        filter: blur(3px);
+        transform: scale(1.05);
         z-index: -2;
     }
 
-    // Máscara com a cor primária e transparência
+    // 🔹 Máscara com a cor primária
     .banner-overlay {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         background: rgba(var(--color-primary), 0.7);
         z-index: -1;
@@ -47,16 +49,12 @@
         width: 55vw;
         max-width: 800px;
         height: auto;
-        position: relative;
-    
-        filter: 
-        drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.9)) // Contorno escuro mais intenso
-        drop-shadow(6px 6px 18px rgba(0, 0, 0, 0.8)); // Sombra para profundidade
+        filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.9));
+
         transition: transform 0.3s ease-in-out;
-    
+
         @media (max-width: 768px) {
             width: 70vw;
         }
     }
-    
 }
