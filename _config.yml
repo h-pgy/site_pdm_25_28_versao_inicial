@@ -2,6 +2,11 @@
 title: "Programa de Metas 2025-2028"
 description: "Site oficial do Programa de Metas 2025-2028 da Prefeitura de São Paulo"
 
+#url
+baseurl: "/site_pdm_25_28_versao_inicial" # Nome do repositório no GitHub Pages
+url: "https://h-pgy.github.io" # URL base do GitHub Pages
+
+
 # Configuração do Sass (Garante que o Jekyll compila corretamente)
 sass:
   sass_dir: _sass
