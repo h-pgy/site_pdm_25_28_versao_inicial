@@ -1,11 +1,15 @@
 <nav class="navbar">
     <div class="container">
-        <!-- Logo da navbar -->
         <a href="/" class="navbar-logo">
             <img src="{{ '/assets/images/logo-navbar.svg' | relative_url }}" alt="Programa de Metas">
         </a>
 
-        <!-- Menu de navegação -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <ul class="nav-links">
             <li><a href="#sobre-pdm" class="nav-btn">Sobre o PDM</a></li>
             <li><a href="#audiencias" class="nav-btn">Audiências Públicas</a></li>

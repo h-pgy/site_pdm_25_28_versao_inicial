@@ -14,3 +14,30 @@ document.addEventListener("DOMContentLoaded", function () {
     updateNavbar();
     window.addEventListener("scroll", updateNavbar);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.querySelector(".nav-links");
+    const hamburger = document.querySelector(".hamburger");
+
+    function toggleMenu() {
+        if (menu.classList.contains("active")) {
+            menu.classList.remove("active");
+            hamburger.classList.remove("active");
+        } else {
+            menu.classList.add("active");
+            hamburger.classList.add("active");
+        }
+    }
+
+    if (hamburger) {
+        hamburger.addEventListener("click", toggleMenu);
+    }
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", function () {
+            menu.classList.remove("active");
+            hamburger.classList.remove("active");
+        });
+    });
+});
+
