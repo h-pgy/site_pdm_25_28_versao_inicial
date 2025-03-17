@@ -1,0 +1,26 @@
+<section id="programas-anteriores" class="programas-anteriores">
+    <div class="container">
+        <h2 class="titulo">Programas de Metas Anteriores</h2>
+
+        <p><span class="destaque">O</span> histórico dos Programas de Metas permite acompanhar a evolução dos compromissos assumidos pela Prefeitura ao longo dos anos. Aqui você pode acessar os documentos e consultar os principais resultados de cada gestão.</p>
+
+        <div class="cards-container">
+            {% for programa in site.data.programas_anteriores %}
+            <div class="card">
+                <img src="{{ programa.imagem }}" alt="Imagem do {{ programa.periodo }}">
+                <div class="card-content">
+                    <h3 class="card-title">{{ programa.periodo }}</h3>
+                    <p class="prefeito">Prefeito: {{ programa.prefeito }}</p>
+                    <p class="card-text">{{ programa.resumo }}</p>
+                    <button class="btn-detalhes" onclick="openModal('{{ programa.id }}')">Saiba mais</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- 🔹 Inclusão dos modais dinamicamente -->
+{% for programa in site.data.programas_anteriores %}
+    {% include modal-programa.html programa=programa %}
+{% endfor %}

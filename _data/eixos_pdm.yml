@@ -1,0 +1,11 @@
+- nome: "Viver São Paulo"
+  logo: "/assets/images/eixo_viver.svg"
+  descricao: "Este eixo foca na qualidade de vida dos cidadãos, abrangendo moradia, saúde, lazer e bem-estar. O objetivo é garantir uma cidade mais humana, acessível e vibrante para todos."
+
+- nome: "Universo SP"
+  logo: "/assets/images/eixo_universo.svg"
+  descricao: "Voltado para cultura, educação e diversidade, este eixo promove o conhecimento e o patrimônio cultural da cidade, fortalecendo a identidade paulistana e incentivando a inovação social."
+
+- nome: "Cidade Inteligente"
+  logo: "/assets/images/eixo_cidade_inteligente.svg"
+  descricao: "Aprimora a infraestrutura urbana com tecnologia e inovação. Inclui mobilidade eficiente, digitalização de serviços públicos e soluções sustentáveis para tornar São Paulo mais conectada e funcional."

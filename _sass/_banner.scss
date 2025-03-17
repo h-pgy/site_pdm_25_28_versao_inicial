@@ -1,0 +1,60 @@
+.banner {
+    position: relative;
+    width: 100vw; // 🔹 Garante que ocupa toda a largura
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin: 0; // 🔹 Remove qualquer margem extra
+
+    // 🔹 Imagem de fundo corrigida para cobrir toda a tela
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background: url('/assets/images/banner-bg.jpg') no-repeat center center;
+        background-size: cover;
+        filter: blur(3px);
+        transform: scale(1.05);
+        z-index: -2;
+    }
+
+    // 🔹 Máscara com a cor primária
+    .banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background: rgba(var(--color-primary), 0.7);
+        z-index: -1;
+    }
+
+    .banner-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-logo {
+        width: 55vw;
+        max-width: 800px;
+        height: auto;
+        filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.9));
+
+        transition: transform 0.3s ease-in-out;
+
+        @media (max-width: 768px) {
+            width: 70vw;
+        }
+    }
+}

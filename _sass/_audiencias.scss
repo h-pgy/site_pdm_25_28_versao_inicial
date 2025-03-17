@@ -1,0 +1,183 @@
+.audiencias {
+    padding: 80px 20px;
+    text-align: center;
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .titulo {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 3.2rem;
+        color: rgb(var(--color-primary));
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+
+    .subtitulo {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2rem;
+        color: rgb(var(--color-primary));
+        margin-top: 40px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+
+    p {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        text-align: justify;
+        margin-bottom: 20px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .destaque {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(var(--color-primary));
+        display: inline-block;
+        margin-right: 6px;
+    }
+
+    .tabela-container {
+        max-height: 300px; /* 🔹 Limita a altura para exibir 5 linhas */
+        overflow-y: auto; /* 🔹 Adiciona scroll vertical quando necessário */
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(var(--color-secondary));
+        margin-bottom: 30px;
+    }
+
+
+    .tabela-audiencias {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 2px solid rgba(var(--color-secondary), 0.3);
+        }
+
+        th {
+            background: rgb(var(--color-primary));
+            color: rgb(var(--color-inverted));
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        td {
+            color: rgb(var(--color-text));
+        }
+
+        a {
+            color: rgb(var(--color-secondary));
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: rgba(var(--color-secondary), 0.8);
+        }
+
+        tr:nth-child(even) {
+            background: rgba(var(--color-secondary), 0.1);
+        }
+    }
+
+    .modal-trigger {
+        display: inline-block;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1.6rem;
+        color: rgb(var(--color-primary));
+        text-decoration: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
+    .modal-trigger:hover {
+        text-decoration: underline;
+    }
+    
+    /* Estilização do Modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        max-width: 90%; /* 🔹 Evita que o modal ultrapasse a tela */
+        max-height: 90vh; /* 🔹 Mantém um limite na altura */
+        overflow-y: auto; /* 🔹 Habilita rolagem interna se necessário */
+        text-align: center;
+        position: relative;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .modal-title {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2rem;
+        color: rgb(var(--color-primary));
+        margin-bottom: 15px;
+    }
+    
+    .modal-content p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        text-align: justify;
+        margin-bottom: 15px;
+        color: rgb(var(--color-text));
+    }
+    
+    .modal-content p strong {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1.4rem;
+        color: rgb(var(--color-primary));
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    /* 🔹 Garante que a imagem se ajuste corretamente dentro do modal */
+    .modal img {
+        width: 100%;
+        max-width: 600px; /* 🔹 Define um tamanho máximo para evitar que fique gigante */
+        height: auto;
+        margin-top: 15px;
+        border-radius: 8px;
+    }
+    
+    
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    
+}
+
+

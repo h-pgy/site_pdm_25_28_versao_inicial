@@ -1,0 +1,14 @@
+# Configuração básica do Jekyll
+title: "Programa de Metas 2025-2028"
+description: "Site oficial do Programa de Metas 2025-2028 da Prefeitura de São Paulo"
+
+# Definição do caminho base do site
+url: "http://localhost:4000" # Altere para o domínio final em produção
+baseurl: ""
+
+# Configuração do Sass (Garante que o Jekyll compila corretamente)
+sass:
+  sass_dir: _sass
+  style: compressed  # Comprime o CSS para melhorar a performance
+
+

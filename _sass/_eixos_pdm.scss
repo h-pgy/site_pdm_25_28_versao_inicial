@@ -1,0 +1,84 @@
+.eixos-pdm {
+    padding: 80px 20px;
+    text-align: center;
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .titulo {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 3.2rem;
+        color: rgb(var(--color-primary));
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        text-align: justify;
+        margin-bottom: 20px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .destaque {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2rem; /* 🔹 Aumenta o tamanho da primeira letra */
+        font-weight: bold;
+        color: rgb(var(--color-primary));
+        display: inline-block;
+        margin-right: 6px;
+    }
+
+    .grid-eixos {
+        display: flex;
+        flex-direction: column; /* 🔹 Agora os cards ficam um abaixo do outro */
+        gap: 30px; /* 🔹 Maior espaçamento entre os cards */
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .card-eixo {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        width: 80%; /* 🔹 Os cards agora ocupam mais espaço */
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            width: 140px; /* 🔹 Aumenta o tamanho do logo */
+            height: auto;
+        }
+
+        .card-content {
+            text-align: left;
+        }
+
+        .card-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: rgb(var(--color-primary));
+            margin-bottom: 8px;
+        }
+
+        .card-text {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            color: rgb(var(--color-text));
+            text-align: justify;
+        }
+    }
+}

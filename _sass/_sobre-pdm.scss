@@ -1,0 +1,107 @@
+.sobre-pdm {
+    padding: 80px 20px;
+    text-align: center;
+
+    .container {
+        max-width: 1000px; /* 🔹 Aumenta a largura máxima */
+        margin: 0 auto;
+    }
+
+    .titulo {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 3.2rem; /* 🔹 Aumenta o tamanho do título */
+        color: rgb(var(--color-primary));
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 1.4rem; /* 🔹 Aumenta o tamanho do texto */
+        line-height: 1.8;
+        text-align: justify;
+        margin-bottom: 20px;
+        max-width: 90%; /* 🔹 Permite que ocupe mais espaço na página */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .destaque {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2rem; /* 🔹 Aumenta o tamanho da primeira letra */
+        font-weight: bold;
+        color: rgb(var(--color-primary));
+        display: inline-block;
+        margin-right: 6px;
+    }
+
+    .download-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        padding: 20px;
+        background: rgba(var(--color-primary), 0.1);
+        border: 2px solid rgba(var(--color-primary), 0.5); /* 🔹 Melhor borda */
+        border-radius: 12px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .download-text {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1.8rem;
+        color: rgb(var(--color-primary));
+        margin-bottom: 20px;
+        padding: 10px;
+        background: rgba(var(--color-primary), 0.05);
+        width: 100%;
+        border-radius: 8px;
+        text-align: center;
+    }
+    
+    .download-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        width: 100%;
+    
+        .btn-download {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 200px; /* 🔹 Definir tamanho fixo maior */
+            height: 100px; /* 🔹 Ajustar altura para que o texto não ultrapasse */
+            padding: 20px;
+            background: rgb(var(--color-primary));
+            color: rgb(var(--color-secondary));
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+    
+        .btn-download img {
+            width: 60px;
+            height: auto;
+            margin-bottom: 5px;
+        }
+    
+        .btn-download:hover {
+            background: rgba(var(--color-primary), 0.9);
+            box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
+        }
+    }
+    
+    
+    
+    
+}
