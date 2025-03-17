@@ -3,7 +3,7 @@ title: "Programa de Metas 2025-2028"
 description: "Site oficial do Programa de Metas 2025-2028 da Prefeitura de São Paulo"
 
 # Definição do caminho base do site
-url: "http://localhost:4000" # Altere para o domínio final em produção
+url: "https://h-pgy.github.io/site_pdm_25_28_versao_inicial" # Altere para o domínio final em produção
 baseurl: ""
 
 # Configuração do Sass (Garante que o Jekyll compila corretamente)
