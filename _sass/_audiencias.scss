@@ -15,6 +15,16 @@
         text-transform: uppercase;
     }
 
+    .subtitulo {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2rem;
+        color: rgb(var(--color-primary));
+        margin-top: 40px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+
     p {
         font-size: 1.4rem;
         line-height: 1.8;
@@ -35,9 +45,13 @@
     }
 
     .tabela-container {
-        margin-top: 40px;
-        overflow-x: auto;
+        max-height: 300px; /* 🔹 Limita a altura para exibir 5 linhas */
+        overflow-y: auto; /* 🔹 Adiciona scroll vertical quando necessário */
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(var(--color-secondary));
+        margin-bottom: 30px;
     }
+
 
     .tabela-audiencias {
         width: 100%;
@@ -81,4 +95,67 @@
             background: rgba(var(--color-secondary), 0.1);
         }
     }
+
+    .modal-trigger {
+        display: inline-block;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1.6rem;
+        color: rgb(var(--color-primary));
+        text-decoration: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
+    .modal-trigger:hover {
+        text-decoration: underline;
+    }
+    
+    /* Estilização do Modal */
+    .modal {
+        display: none; /* 🔹 Agora o modal não aparece ao carregar a página */
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        max-width: 600px;
+        text-align: center;
+        position: relative;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .modal-title {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2rem;
+        color: rgb(var(--color-primary));
+        margin-bottom: 15px;
+    }
+    
+    .modal img {
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 8px;
+    }
+    
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    
 }
+
+

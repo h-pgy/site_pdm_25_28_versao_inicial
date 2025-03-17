@@ -63,3 +63,29 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("modalPDM");
+    const closeButton = document.querySelector(".close");
+
+    function openModal() {
+        modal.style.display = "flex";
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    document.querySelector(".modal-trigger").addEventListener("click", function (event) {
+        event.preventDefault();
+        openModal();
+    });
+
+    closeButton.addEventListener("click", closeModal);
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+});
