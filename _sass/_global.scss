@@ -12,9 +12,17 @@
     box-sizing: border-box;
 }
 
+/* 🔹 Definir Roboto como a fonte padrão para todo o site */
 body {
     font-family: 'Roboto', sans-serif;
-    color: rgb(var(--color-text));  /* 🔹 Garante que o texto fique visível */
-    background: white;              /* 🔹 Evita fundo transparente */
-    padding-top: 70px;              /* 🔹 Ajusta espaço para navbar fixa */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgb(var(--color-text));
+    background: white;
+}
+
+/* 🔹 Garantir que títulos e destaques usem Bebas Neue */
+h1, h2, h3, h4, h5, h6, .titulo, .subtitulo, .modal-title, .destaque {
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(var(--color-primary));
 }
