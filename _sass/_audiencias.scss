@@ -112,7 +112,7 @@
     
     /* Estilização do Modal */
     .modal {
-        display: none; /* 🔹 Agora o modal não aparece ao carregar a página */
+        display: none;
         position: fixed;
         z-index: 1000;
         left: 0;
@@ -122,14 +122,16 @@
         background-color: rgba(0, 0, 0, 0.6);
         align-items: center;
         justify-content: center;
+        padding: 20px;
     }
-    
     
     .modal-content {
         background: white;
         padding: 20px;
         border-radius: 12px;
-        max-width: 600px;
+        max-width: 90%; /* 🔹 Evita que o modal ultrapasse a tela */
+        max-height: 90vh; /* 🔹 Mantém um limite na altura */
+        overflow-y: auto; /* 🔹 Habilita rolagem interna se necessário */
         text-align: center;
         position: relative;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -142,11 +144,31 @@
         margin-bottom: 15px;
     }
     
+    .modal-content p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        text-align: justify;
+        margin-bottom: 15px;
+        color: rgb(var(--color-text));
+    }
+    
+    .modal-content p strong {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1.4rem;
+        color: rgb(var(--color-primary));
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    /* 🔹 Garante que a imagem se ajuste corretamente dentro do modal */
     .modal img {
         width: 100%;
+        max-width: 600px; /* 🔹 Define um tamanho máximo para evitar que fique gigante */
+        height: auto;
         margin-top: 15px;
         border-radius: 8px;
     }
+    
     
     .close {
         position: absolute;
