@@ -7,7 +7,7 @@
         <div class="grid-eixos">
             {% for eixo in site.data.eixos_pdm %}
             <div class="card-eixo">
-                <img src="{{ eixo.logo }}" alt="Logo {{ eixo.nome }}">
+                <img src="{{ eixo.logo | relative_url}}" alt="Logo {{ eixo.nome }}">
                 <div class="card-content">
                     <h3 class="card-title">{{ eixo.nome }}</h3>
                     <p class="card-text">{{ eixo.descricao }}</p>

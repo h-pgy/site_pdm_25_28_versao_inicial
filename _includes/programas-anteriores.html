@@ -7,7 +7,7 @@
         <div class="cards-container">
             {% for programa in site.data.programas_anteriores %}
             <div class="card">
-                <img src="{{ programa.imagem }}" alt="Imagem do {{ programa.periodo }}">
+                <img src="{{ programa.imagem | relative_url}}" alt="Imagem do {{ programa.periodo }}">
                 <div class="card-content">
                     <h3 class="card-title">{{ programa.periodo }}</h3>
                     <p class="prefeito">Prefeito: {{ programa.prefeito }}</p>
