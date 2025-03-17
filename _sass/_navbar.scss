@@ -23,15 +23,16 @@
     .navbar-logo {
         display: flex;
         align-items: center;
-        margin-right: 40px; // 🔹 Espaço entre o logo e os botões
-
+        margin-right: 60px; /* Aumenta o espaçamento entre o logo e os botões */
+        margin-left: 20px; /* Move o logo mais para a esquerda */
+    
         img {
-            width: 60px;
+            width: 80px; /* Aumenta o tamanho do logo */
             height: auto;
             transition: transform 0.3s ease-in-out;
             filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.5));
         }
-
+    
         &:hover img {
             transform: scale(1.1);
         }
@@ -40,31 +41,31 @@
     .nav-links {
         list-style: none;
         display: flex;
-        gap: 30px; /* 🔹 Aumenta o espaçamento entre os botões */
-        align-items: center;
-        
+        gap: 20px;
+    
         .nav-btn {
             display: inline-block;
-            padding: 16px 30px;  /* 🔹 Aumenta o espaço interno do botão */
+            padding: 16px 30px;  /* 🔹 Botão maior */
             background: rgba(var(--color-primary), 0.85);
-            border-radius: 12px;  /* 🔹 Bordas mais arredondadas para um efeito mais moderno */
+            border-radius: 10px;  /* 🔹 Bordas mais arredondadas */
             color: rgb(var(--color-inverted)) !important;
             font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.6rem;  /* 🔹 Texto maior */
+            font-size: 1.8rem;  /* 🔹 Texto maior */
             text-transform: uppercase;
             letter-spacing: 1.5px;
             text-decoration: none;
             transition: all 0.3s ease-in-out;
-            width: 100%;  /* 🔹 Faz os botões ocuparem a largura total do contêiner */
-            text-align: center; /* 🔹 Garante que o texto fique centralizado */
+            width: 100%;  /* 🔹 Faz os botões ocuparem mais espaço */
+            text-align: center;
     
             &:hover {
                 background: rgba(var(--color-primary), 1);
-                transform: translateY(-3px);
-                box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+                transform: translateY(-2px);
+                box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
             }
         }
     }
+    
     
     
 }
