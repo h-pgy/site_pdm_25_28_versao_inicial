@@ -1,0 +1,19 @@
+<section id="eixos-pdm" class="eixos-pdm">
+    <div class="container">
+        <h2 class="titulo">Eixos do PDM 2025-2028</h2>
+
+        <p><span class="destaque">O</span> Programa de Metas 2025-2028 está estruturado em quatro eixos principais, cada um representando um pilar essencial para o desenvolvimento sustentável e inclusivo da cidade. Esses eixos organizam as diretrizes e ações da gestão municipal, garantindo um planejamento estratégico alinhado às necessidades da população.</p>
+
+        <div class="grid-eixos">
+            {% for eixo in site.data.eixos_pdm %}
+            <div class="card-eixo">
+                <img src="{{ eixo.logo }}" alt="Logo {{ eixo.nome }}">
+                <div class="card-content">
+                    <h3 class="card-title">{{ eixo.nome }}</h3>
+                    <p class="card-text">{{ eixo.descricao }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
